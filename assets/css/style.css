@@ -51,7 +51,7 @@ footer {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type: none;
+    list-style-type: none; /*Remove bullets points from list*/
 }
 
 #menu > li {
@@ -60,4 +60,16 @@ footer {
 
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar styles with dropdown toggle*/
+nav {
+    position: absolute; /*Absolute positioning takes an element outside the normal
+    flow of the page structure.*/
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    left: 0;
+    padding: 0 1rem;
+    display:none /*bar items are hidden until the user clicks to open them.*/  
 }

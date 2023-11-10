@@ -125,6 +125,32 @@ nav {
     font-size: 2rem;
 }
 
+#reasons {
+    width: 90%;
+    margin: auto 20px;
+}
+
+#reasons  h2 {
+    font-size:200%;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#benefits-physical > div, #benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /*Media query: tablets and larger(768px and up)*/
 @media screen and (min-width:768px) {
     nav {

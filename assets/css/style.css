@@ -23,6 +23,9 @@ header {
     z-index: 99;
     width:100%;
     box-shadow: 0 2px 2px #3a3a3a; /*Makes a shadow effect*/
+    display: flex; /*we would expect it to show in the top right corner.*/
+    justify-content: space-between; /*Let's also add some space-between them with justify-content.*/
+    align-items: baseline;/*Finally, let's just make sure they all show in a line vertically.*/
 }
 
 header a {
@@ -72,4 +75,18 @@ nav {
     left: 0;
     padding: 0 1rem;
     display:none /*bar items are hidden until the user clicks to open them.*/  
+}
+
+/*Nav toggle*/
+#nav-toggle:checked~nav { /*Using an id and a psudo class we can select the nav element when we check the box*/
+    display: block; /*I'll show the content*/
+    top: 100%; /*100% represents the bottom of the parent element.*/
+}
+
+#nav-toggle {
+    display: none; /*Hide checkbox*/
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }

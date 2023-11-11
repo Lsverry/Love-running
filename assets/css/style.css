@@ -203,6 +203,16 @@ hr {
     margin: 5px 0;
 }
 
+/*Media query: large and landscape phones (576pxpx and up)*/
+@media screen  and (min-width:576px) {
+    #photos {
+        column-count: 2;/*Make columns, the value is the number of colums*/
+        column-gap: 0;
+    }
+    
+}
+
+
 /*Media query: tablets and larger(768px and up)*/
 @media screen and (min-width:768px) {
     nav {
@@ -249,12 +259,21 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /*Gallery*/
+    #photos {
+        column-count: 3;
+    }
 }
 /*Large devices*/
 @media screen and (min-width:992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
         
+    }
+
+    #photos {
+        column-count: 4;
     }
     
 }

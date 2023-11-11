@@ -90,6 +90,17 @@ main {
     color: #ffffff;
 }
 
+/*Gallery*/
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0; /*Remove the space between the photos*/
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
